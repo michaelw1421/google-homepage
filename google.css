@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 420px 1fr;
+    align-items: end;
+}
+
+nav {
+    grid-row: 1 / 2;
+    padding: 13px 12px 0 12px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+nav a:link {
+    color: #4d4d4d;
+    text-decoration-line: none;
+}
+
+nav a:visited {
+    color: #4d4d4d;
+}
+
+nav a:hover {
+    text-decoration-line: underline;
+}
+
+.left-nav li {
+    list-style: none;
+    float: left;
+    padding: 10px 10px;
+}
+
+.right-nav li {
+    list-style: none;
+    float: right;
+    padding: 10px 10px;
+}
+
+main {
+    grid-row: 2 / 3;
+}
+.logo {
+    width: max-content;
+    padding-bottom: 20px;
+    margin: 0 auto; 
+}
+
+.searchform {
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+ 
+.searchform input.textbox {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+    width: 430px;
+    height: 43px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: rgb(223, 223, 223);
+    border-left-color: rgb(211, 211, 211);
+    border-bottom-color: rgb(201, 201, 201);
+    border-right-color: rgb(211, 211, 211);
+    border-radius: 4px;
+    box-shadow: 0 3px 2px rgb(223, 223, 223);
+}
+
+.searchform input.textbox:focus {
+    outline: none;
+}
+
+.searchform .buttons {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.searchform input.button {
+    padding: 12px;
+    margin: 0 3px;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(97, 97, 97);
+    background-color: rgb(241, 241, 241);
+    border-width: 1px;
+    border-color: rgb(241, 241, 241);
+    border-style: solid;
+}
+
+.searchform input.button:hover {
+    border-color: rgb(184, 184, 184);
+    border-radius: 3px;
+    color: black;
+}
+
+.francais {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.francais, a:link {
+    text-decoration-line: none;
+}
+
+.francais a:hover {
+    text-decoration-line: underline;
+}
+
+footer {
+    padding: 13px 18px;
+    grid-row: 3 / 4;
+    font-family: Arial;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+    background-color: rgb(240, 240, 240);
+    border-top-color: rgb(224, 224, 224);
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+footer .left-nav li, footer .right-nav li {
+    padding: 0 10px;
+}
+
+footer a:link {
+    color: rgb(114, 114, 114);
+    text-decoration-line: none;
+}
+
+footer a:visited {
+    color: rgb(114, 114, 114);
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+}
+
+
